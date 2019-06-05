@@ -1,0 +1,38 @@
+\documentclass{article}
+\pagestyle{headings}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} 
+\usepackage{eurosym}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{fancyhdr}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{amsmath}
+% \usepackage{relsize}    % decommenter (et installer le package) pour avoir un sous titre
+\usepackage{amsthm}
+
+\setlength{\textwidth}{370pt}
+\lhead{}  % hides the left header (subsection name) which is overlapping with right header (section name)
+
+\begin{document}
+
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{definition}{Definition}
+\newtheorem*{remark}{Remark}
+
+\title{Titre}  % commenter cette ligne et décommentez la prochaine pour avoir un sous titre
+%\title{Titre\\[0.07em]\smaller{}Sous titre}
+\author{Votre nom}
+
+\maketitle
+
+\tableofcontents
+
+\pagestyle{fancy}
+
+\input{chap1.tex}
+\input{chap2.tex}
+\input{biblio.tex}
+\end{document}
